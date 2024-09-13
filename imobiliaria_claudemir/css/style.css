@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.menu {
+    list-style: none;
+    border: 1px solid #c0c0c0;
+    float: left;
+}
+
+.menu li {
+    position: relative;
+    float: left;
+    border-right: 1px solid #c0c0c0;
+}
+
+.menu li a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.menu li a:hover {
+    background: #333;
+    color: #fff;
+    -moz-box-shadow: 0 3px 10px 0 #CCC;
+    -webkit-box-shadow: 0 3px 10px 0 #ccc;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+.menu li ul {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+}
+
+.menu li:hover ul,
+.menu li.over ul {
+    display: block;
+}
+
+.menu li ul li {
+    border: 1px solid #c0c0c0;
+    display: block;
+    width: 150px;
+}
+
+h1 {
+    color: tomato;
+    font-size: 50px;
+    margin-top: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    float: right;
+    display: flex;
+}
+
+ul.navbar {
+    max-width: 900px;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+}
+
+ul.navbar li a {
+    float: left;
+    padding: 5px;
+}
+
+ul.navbar li.socialmedia {
+    float: right;
+    margin-top: 0;
+
+}
+
+ul.navbar {
+    float: none
+}
+
+.socialmedia {
+    display: none;
+}
+
+ul.navbar {
+    max-width: 900px;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+}
+
+ul.navbar li a {
+    font-size: 25px;
+    color: rgb(11, 11, 11);
+    float: none;
+    text-decoration: none;
+}
+
+ul.navbar li a:hover {
+    color: blueviolet;
+}
+
+ul.navbar {
+    top: 0;
+    position: fixed;
+    background-color: #9e9e9e7a;
+    margin: 0;
+    padding: 0.25em;
+    list-style-type: none;
+    width: 15%;
+    height: 100%;
+}
+
+
+li {
+    display: block;
+
+}
+
+ul.navbar li a {
+    font-size: 25px;
+    color: rgb(11, 11, 11);
+    float: none;
+    text-decoration: none;
+}
+
+ul.navbar li.socialmedia {
+    float: left;
+    padding: 5px;
+
+}
+
+.content {
+    font-family: verdana;
+    color: black;
+    margin: 20% 0 0 15%;
+    text-align: center;
+}
+
+ul.navbar li.socialmedia {
+    text-decoration: none;
+}
+
+
+ul.navbar {
+    top: 0;
+    position: fixed;
+    background-color: #9e9e9e7a;
+    margin: 0;
+    /* padding:0.25em;
+    list-style-type: none; */
+    width: 15%;
+    height: 100%;
+}
+
+#pagina-home {
+    background-image: linear-gradient(rgba(44, 40, 40, 0.514), rgba(48, 42, 42, 0.5)), url(/img/fundo.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-principal ul {
+    list-style: none;
+}
+
+.menu-principal ul li {
+    display: inline-block;
+}
+
+/* .menu-principal ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+} */
+
+.menu-principal ul li a:hover {
+    background-color: white;
+    color: black
+}
+
+.menu-principal ul li .link-ativo {
+    background: rgb(255, 255, 255);
+    color: black;
+}
+
+
+
+.btn {
+    border: 1px solid white;
+    padding: 10px 80px;
+    color: white;
+    text-decoration: none;
+    transition: 0.6s ease;
+    margin-left: 10px;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
+
+#pagina-home main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.barra-pesquisa {
+    background: #FF983D;
+    font-family: amplesoftlight;
+    background: #eabb2d;
+    color: #fff;
+    position: relative;
+    z-index: 999;
+    margin-top: 0;
+    float: left;
+    width: 100%;
+    padding: 10px 0 20px;
+}
+
+.barra-pesquisa {
+    font-family: amplesoftlight;
+    background: #eabb2d;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    margin-top: -80px;
+    float: left;
+    width: 100%;
+    padding: 10px 0 20px;
+}
+
+.barra-pesquisa h2 {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.barra-pesquisa select {
+    float: right;
+    width: 130px;
+    padding: 8px 5px;
+    background: #eabb2d;
+    border: 1px solid #f2d57d;
+    outline: 1px solid #f2d57d;
+    color: #fff;
+    text-transform: none;
+}
+
+select {
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+select {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 0 .5em;
+    color: #363636;
+    cursor: pointer;
+    border: 1px solid #dfdfdf;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #fff;
+    background-image: none;
+    text-transform: none;
+}
+
+.barra-pesquisa span {
+    padding: 10px;
+    float: left;
+    width: 100%;
+    border: 0 solid red;
+    line-height: 2;
+    font-size: 11px;
+    text-align: left;
+    text-indent: 0;
+}
+
+.barra-pesquisa span {
+    padding: 10px 0;
+    float: left;
+    width: 100%;
+    border: 0 solid red;
+    line-height: 3.1;
+    font-size: 11px;
+}
+
+.barra-pesquisa div:nth-child(1) {
+    width: 100%;
+    float: left;
+    border: 0 solid red;
+    padding: 0 10px;
+}
+
+.barra-pesquisa div:nth-child(2) {
+    width: 100%;
+    float: left;
+    border: 0 solid red;
+    text-indent: 10px;
+    margin-top: 10px;
+}
+
+.barra-pesquisa div:nth-child(3) {
+    width: 100%;
+    float: left;
+    border: 0 solid #000;
+    text-indent: 50px;
+    margin-top: 10px;
+}
+
+.barra-pesquisa div:nth-child(4) {
+    width: 100%;
+    float: left;
+    border: 0 solid blue;
+    text-indent: 20px;
+    margin-top: 10px;
+}
+
+.barra-pesquisa div:nth-child(5) {
+    width: 21%;
+    float: left;
+    border: 0 solid orange;
+    text-indent: 50px;
+    margin-top: 10px;
+}
+
+
+/* PARTE DO CARD */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ .card {
+	background-color: #f2f2f2;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	margin: 20px;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.card h2 {
+    font-family: helvetica;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.card p {
+    font-family: helvetica;
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+.card img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+.card button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+}
+
+.btn{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+    display: flex;
+    width: 100%;
+}
+
+.botao2{
+    background-color: blue;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    font-size: 25px;
+}
+
+
+input{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid rgb(200, 200, 200);
+    outline: 0;
+    margin: 15px;
+    padding: 15px;
+}
+
+
+input:focus{
+    border-bottom: 2px solid tomato;  
+}
+
+::placeholder{
+    font-size: 20px;
+    margin: 15px;
+    margin: 15px;
+}
+
+
+
+.card{
+    border: 0;
+    font-size: 25px;
+}
+
+h5{
+    font-size: 25px;
+}
+
+
